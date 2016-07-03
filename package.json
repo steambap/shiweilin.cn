@@ -1,0 +1,27 @@
+{
+  "name": "shiweilin.cn",
+  "version": "1.0.0",
+  "private": true,
+  "description": "我的个人网站，中文！",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steambap/shiweilin.cn.git"
+  },
+  "keywords": [],
+  "author": {
+	  "name": "Weilin Shi",
+	  "email": "934587911@qq.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steambap/shiweilin.cn/issues"
+  },
+  "homepage": "https://github.com/steambap/shiweilin.cn#readme",
+  "dependencies": {
+    "koa": "^1.2.0"
+  }
+}
