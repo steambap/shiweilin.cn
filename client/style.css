@@ -1,0 +1,16 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', sans-serif;
+}
+
+#wrapper {
+	max-width: 420px;
+	color: #625345;
+}
+
+@media (width >= 600px) {
+	#wrapper {
+		border: 1px solid #0e581f;
+		margin: 2rem auto;
+		padding-bottom: 2rem;
+	}
+}
