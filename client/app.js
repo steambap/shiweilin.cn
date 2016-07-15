@@ -1,6 +1,7 @@
 import React from 'react';
 import {me} from './style';
 import Info from './info';
+import Hexie from './hexie';
 
 const App = (
 <div id="wrapper">
@@ -28,6 +29,7 @@ const App = (
 					alt="qrcode"/>
 			</div>
 			<Info />
+			<Hexie />
 		</div>
 	</div>
 </div>
