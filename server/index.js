@@ -28,8 +28,9 @@ app.use(function *handleRequest(next) {
 	// if (this.path !== '/') {
 	// 	return yield next;
 	// }
+	const filepath = resolve(__dirname, '..', 'view', 'index.html');
 
-	this.body = yield render('index', {
+	this.body = yield render(filepath, {
 		jobTitle: '前端工程师',
 		company: '橙子科技'
 	});
