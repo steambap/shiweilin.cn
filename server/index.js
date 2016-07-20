@@ -13,7 +13,7 @@ const app = koa();
 app.use(logger());
 app.use(compress({threshold: 512}));
 app.use(serve(resolve(__dirname, '..', 'public')));
-app.use(function *catchAll(next) {
+app.use(function * catchAll(next) {
 	try {
 		yield next;
 	} catch (err) {
@@ -24,11 +24,7 @@ app.use(function *catchAll(next) {
 	}
 });
 
-app.use(function *handleRequest(next) {
-	// if (this.path !== '/') {
-	// 	return yield next;
-	// }
-
+app.use(function * handleRequest() {
 	this.body = yield render('index', {
 		jobTitle: '前端工程师',
 		company: '橙子科技'

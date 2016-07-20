@@ -5,7 +5,7 @@
   "description": "我的个人网站，中文！",
   "main": "index.js",
   "scripts": {
-    "test": "node test/test.js",
+    "test": "xo",
     "start": "node ."
   },
   "repository": {
@@ -35,5 +35,10 @@
   "devDependencies": {
     "cross-env": "^2.0.0",
     "xo": "^0.16.0"
+  },
+  "xo": {
+    "rules": {
+      "linebreak-style": 0
+    }
   }
 }

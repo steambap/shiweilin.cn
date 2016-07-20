@@ -5,7 +5,7 @@ const views = require('co-views');
 
 const filepath = resolve(__dirname, '..', 'views');
 const render = views(filepath, {
-  map: { html: 'dust' }
+	map: {html: 'dust'}
 });
 
 module.exports = render;
