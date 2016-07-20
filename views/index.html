@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+	<meta name="description" content="石威林的个人首页|Weilin Shi's personal site">
+	<meta name="keywords" content="石威林, Weilin Shi, JavaScript, NodeJS, node.js, HTML">
+	<meta name="author" content="Weilin Shi, 934587911@qq.com">
+	<meta name="subject" content="石威林|Weilin Shi">
+	
+	<link rel="author" href="https://github.com/steambap">
+	<link rel="publisher" href="https://github.com/steambap">
+	<title>石威林的个人首页|Weilin Shi's personal site</title>
+	<link rel="icon" href="./favicon.png">
+	<link rel="stylesheet" href="./bootstrap.min.css">
+	<style>
+		body {
+			font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', sans-serif;
+			background-color: #f3f3f3;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row p-y-3 m-y-3">
+			<div class="col-md-offset-5 col-md-7 col-xs-12 p-y-3">
+				<div class="text-muted p-y-1">你好，我是</div>
+				<h1>
+					石威林
+					&nbsp;
+					<em 
+						class="text-muted small"
+						style="border-bottom: 1px dotted #818589;vertical-align: bottom">
+						Weilin Shi</em>
+				</h1>
+			</div>
+		</div>
+		<div class="row p-b-3 m-b-3">
+			<div class="col-md-5 hidden-sm-down">
+				<img 
+					src="./logo.png"
+					alt="or-change"
+					class="img-fluid"
+					style="margin-left: auto">
+			</div>
+			<div class="col-md-7">
+				<div class="text-muted small p-y-1">任职</div>
+				<h4>{jobTitle}, {company}</h4>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" style="margin-top: 10rem">
+		<div class="row bg-info p-y-3">
+			<div class="col-xs-12 text-xs-center">
+				<div class="small p-y-1">关于我</div>
+				<p class="p-y-1">我是一只咸鱼单身狗程序猿</p>
+				<p class="p-y-1">
+					访问：
+					<a target="_blank" href="http://weilinshi.org">石威林的个人博客</a>
+					来了解更多
+				</p>
+			</div>
+		</div>
+		<div class="row p-y-3">
+			<div class="col-xs-12 p-y-3 text-xs-center">
+				<div class="text-muted p-y-1">联系我</div>
+				<p>扫下面的二维码加我微信</p>
+				<img src="./media/qrcode.jpg" alt="qrcode" class="img-fluid center-block">
+			</div>
+		</div>
+	</div>
+	<div class="p-y-1 bg-inverse text-xs-center m-t-3" id="footer">
+
+	</div>
+	<script>
+		(function () {
+			document.getElementById('footer').innerHTML = 
+			'<a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" class="text-danger">津ICP备16004773号-1</a>';
+		}());
+	</script>
+</body>
+</html>
