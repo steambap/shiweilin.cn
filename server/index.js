@@ -26,8 +26,7 @@ app.use(function * catchAll(next) {
 
 app.use(function * handleRequest() {
 	this.body = yield render('index', {
-		jobTitle: '前端工程师',
-		company: '橙子科技'
+		year: '2016'
 	});
 });
 
