@@ -24,10 +24,19 @@ app.use(function * catchAll(next) {
 	}
 });
 
-app.use(function * handleRequest() {
+app.use(function * handleRequest(next) {
+	if (this.path !== '/') {
+		return yield next;
+	}
+
 	this.body = yield render('index', {
 		year: '2016'
 	});
+});
+
+app.use(function * catch404() {
+	this.status = 404;
+	this.body = yield render('404', {});
 });
 
 app.on('error', function (err) {
