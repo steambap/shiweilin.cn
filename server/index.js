@@ -24,6 +24,17 @@ app.use(function * catchAll(next) {
 	}
 });
 
+app.use(function * redirect(next) {
+	const origin = this.origin;
+	if (process.env.NODE_ENV === 'production' && !/shiweilin/.test(origin)) {
+		this.redirect('http://shiweilin.cn');
+
+		return;
+	}
+
+	yield next;
+});
+
 app.use(function * handleRequest(next) {
 	if (this.path !== '/') {
 		return yield next;
